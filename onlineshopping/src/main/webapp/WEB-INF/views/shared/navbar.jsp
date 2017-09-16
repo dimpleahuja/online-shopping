@@ -17,7 +17,7 @@
 
 <li id="about"><a href="${contextRoot}/about"><span class="glyphicon glyphicon-info-sign"> About Us</span></a></li>
 <li id="contact"><a href="${contextRoot}/contact"><span class="glyphicon glyphicon-earphone"> Contact Us</span></a></li>
-<li id="listProducts"><a href="${contextRoot}/listProducts"><span class="glyphicon glyphicon-folder-open"> View Product</span></a></li>
+<li id="listProducts"><a href="${contextRoot}/show/all/products"><span class="glyphicon glyphicon-folder-open"> View Product</span></a></li>
 </ul>
 <form class="navbar-form navbar-left" role="search">
 	<div class="form-group">
