@@ -15,7 +15,28 @@
 
 			<!-- Added breadcrumb component -->
 			<div class="row">
-				<div class="col-lg-12">
+	
+			<div class="row">
+	
+				<div class="col-xs-12">
+	<table id="productListTable" class="table table-striped table-bordered">
+	
+	<thread>
+	
+	<tr>
+		<th>ID</th>
+		<th>Name</th>
+	
+	
+	</tr>
+	
+	</thread>
+	
+
+	</table>
+
+
+</div>
 
 	<c:if test="${userClickAllProducts == true }">
 					<ol class="breadcrumb">

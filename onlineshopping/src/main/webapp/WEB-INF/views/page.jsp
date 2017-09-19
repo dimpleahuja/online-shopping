@@ -77,9 +77,13 @@
 
 		<!--end of footer-->
 
-		<!-- bootstrap coded javascript -->
+		<!-- bootstrap core javascript -->
 		<script src="${js}bootstrap.min.js"></script>
-		<!-- self coded javascript -->
+			
+			<!-- datatable plugin -->
+			<script src="${js}/jquery.dataTables.js"></script>
+			
+			<!-- self coded javascript -->
 		<srcipt src="${js}/shopstyle.js"></srcipt>
 
 		<script
