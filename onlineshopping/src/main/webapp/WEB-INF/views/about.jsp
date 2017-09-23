@@ -59,7 +59,7 @@ border-top:1px solid #b2b2b2;
 </head>
 <body>
 <!--start of header and nav bar-->
-<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+<!-- <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
 <div class="container">
 <div class="nav-bar-header">
 <button type="button" class="navbar-toggle"data-target="#mainNavbar" data-toggle="collapse">
@@ -91,7 +91,7 @@ border-top:1px solid #b2b2b2;
 </ul>
 </div>
 </div>
-</nav>										
+</nav>	 -->									
 <!--end of header and navbar-->
 <!-- start of about us paragraph-->
 <div class="container">
