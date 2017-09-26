@@ -63,7 +63,7 @@
 		</div>
 		
 		
-		<%@include file="./shared/footer.jsp" %>>
+		<%@include file="./shared/footer.jsp" %>
 		
 		</div>
 		</body>
