@@ -83,6 +83,10 @@
 		<!-- jQuery -->
 		<script src="${js}/jquery.js"></script>
 		
+		<!-- jQuery validator -->
+		<script src="${js}/jquery.validate.js"></script>
+		
+		
 	<!-- bootstrap core javascript -->
 		<script src="${js}/bootstrap.min.js"></script>
 		
