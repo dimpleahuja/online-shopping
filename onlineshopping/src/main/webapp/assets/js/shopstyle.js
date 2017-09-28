@@ -282,68 +282,65 @@ case'Manage Products':
 			}
 			
 	});
-		
-
 	}
-
-    //-----------------
-	// validation code for category
-
+	
+	
+	//---------------------------------------
+	//validation code for category
+	
 	var $categoryForm = $('#categoryForm');
 	
-	if($categoryForm.length){
+	if($categoryForm.length) {
+		$categoryForm.validate( {
 		
-		$categoryForm.validate({
-			
 			rules : {
 				
 				name : {
 					
 					required: true,
 					minlength: 2
+					 
+				},
+				description: {
+					
+					required: true
 				}
 			},
-			
-		description: {
-			required: true
-			
-		},
-		
-		message : {
-			
-			name: {
+			messages : {
 				
-				required: 'Please add the category name!',
-				minlength: 'The category name should not be less than 2 characters'
+				name : {
+					
+					required: 'Please add the category name!',
+					minlength: 'The category name should not be less than 2 character'
+				},
+				
+				description:{
+					
+					required: 'Please add a description for this category!'
+				}
 			},
+			errorElement: 'em',
+			errorPlacement: function(error, element) {
+				// add the class of help-block
+				error.addClass('help-block');
+				//add the error element after the input element
+				error.insertAfter(element);
+				
+			}
 		
-		description: {
-			
-			required: 'Please add a description for this category!'
-			
-		}
-		
-		},
-		
-		errorElement: 'em',
-		errorPlacement: function(error, element){
-			// add the class of help-block
-			error.addClass('help-block');
-			// add the error element after the input element
-			error.insertAfter(element);
-		}
-	
 		});
 		
 	}
 	
+	
+	
 });
-
 	
 	
-
-
-
-
-
-
+	
+	
+	
+	
+	
+	
+	
