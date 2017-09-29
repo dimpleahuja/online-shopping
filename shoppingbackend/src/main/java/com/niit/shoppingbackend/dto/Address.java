@@ -14,25 +14,23 @@ public class Address {
 	 */
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
-	@Column(name = "user_id")
+	private int id;
+	@Column(name= "user_id")
 	private int userId;
-	@Column(name = "address_line_one")
+	@Column(name= "address_line_one")
 	private String addressLineOne;
-	@Column(name = "address_line_two")
+	@Column(name= "address_line_two")
 	private String addressLineTwo;
 	private String city;
 	private String state;
 	private String country;
-	@Column(name="postal_code")
+	@Column(name= "postal_code")
 	private String postalCode;
 	private boolean shipping;
 	private boolean billing;
 	
-	
 	/*
-	 * getter setter
-	 * 
+	 * SETTER AND GETTER
 	 */
 	
 	public int getId() {
@@ -95,18 +93,17 @@ public class Address {
 	public void setBilling(boolean billing) {
 		this.billing = billing;
 	}
-	
 	/*
-	 * toString for logging and debugging activity
+	 * toString() for logging 
 	 */
-	
 	
 	@Override
 	public String toString() {
-		return "Address [id=" + id + ", userId=" + userId + ", addressLineOne=" + addressLineOne + ", addressLineTwo="
-				+ addressLineTwo + ", city=" + city + ", state=" + state + ", country=" + country + ", postalCode="
-				+ postalCode + ", shipping=" + shipping + ", billing=" + billing + "]";
+		return "Address [id=" + id + ", addressLineOne=" + addressLineOne + ", addressLineTwo=" + addressLineTwo
+				+ ", city=" + city + ", state=" + state + ", country=" + country + ", postalCode=" + postalCode
+				+ ", shipping=" + shipping + ", billing=" + billing + "]";
 	}
+	
 	
 	
 }

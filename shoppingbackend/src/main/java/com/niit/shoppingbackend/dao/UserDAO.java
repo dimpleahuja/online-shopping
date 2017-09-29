@@ -5,14 +5,12 @@ import com.niit.shoppingbackend.dto.Cart;
 import com.niit.shoppingbackend.dto.User;
 
 public interface UserDAO {
-
-	//add an user
+	// add a user
 	boolean addUser(User user);
 	
-	//add an addrerss
+	// add an address
 	boolean addAddress(Address address);
 	
-	//add a cart
+	// add a cart
 	boolean addCart(Cart cart);
-	
 }

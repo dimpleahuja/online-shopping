@@ -17,48 +17,41 @@ public class UserDAOImpl implements UserDAO {
 	@Autowired
 	private SessionFactory sessionFactory;
 	
+	
 	@Override
 	public boolean addUser(User user) {
-		try {
-			
+		try{
 			sessionFactory.getCurrentSession().persist(user);
 			return true;
 		}
-		catch(Exception ex) {
+		catch(Exception ex){
 			ex.printStackTrace();
-			return false; 
+			return false;
 		}
-	
-		
 	}
 
 	@Override
 	public boolean addAddress(Address address) {
-		try {
+		try{
 			sessionFactory.getCurrentSession().persist(address);
 			return true;
 		}
-		
-		catch(Exception ex) {
+		catch(Exception ex){
 			ex.printStackTrace();
 			return false;
-		} 
-	
+		}
 	}
 
 	@Override
 	public boolean addCart(Cart cart) {
-		
-		try {
+		try{
 			sessionFactory.getCurrentSession().persist(cart);
 			return true;
 		}
-		
-		catch(Exception ex) {
+		catch(Exception ex){
 			ex.printStackTrace();
 			return false;
 		}
-	
 	}
-
+	
 }
