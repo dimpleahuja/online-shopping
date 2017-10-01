@@ -28,9 +28,14 @@
 	<button type="submit" class="btn btn-default">Submit</button>
 </form>-->
 <ul class="nav navbar-nav navbar-right">
-<li><a href="#">Subscribe</a></li>
-<li><a href="#">Register</a></li>
-<li><a href="#">Login</a></li>
+<li id="register">
+	<a href="${contextRoot}/register"><span class="glyphicon glyphicon-log-in"> Sign Up</span></a>
+</li>
+<li id="login">
+	<a href="${contextRoot}/login"><span class="glyphicon glyphicon-user"> Login</span></a>
+</li>
+
+
 </ul>
 </div>
 </div>
