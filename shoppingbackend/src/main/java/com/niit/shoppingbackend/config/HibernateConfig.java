@@ -24,8 +24,9 @@ public class HibernateConfig {
 	private final static String DATABASE_DIALECT= "org.hibernate.dialect.H2Dialect";
 	private final static String DATABASE_USERNAME= "sa";
 	private final static String DATABASE_PASSWORD= "";
-//datasource bean will be availabe
-	@Bean
+
+	//dataSource bean will be available
+	@Bean("dataSource")
 	public DataSource getDataSource(){
 		
 		BasicDataSource dataSource = new BasicDataSource();
