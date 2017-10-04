@@ -27,14 +27,24 @@ public class Address implements Serializable{
 	private int id;
 	
 	/*******************/
-	@ManyToOne
+	/*@ManyToOne
 	private User user;
 	
 	public User getUser() {
 		return user;
 	}
-	public void setUser(User user) {
-		this.user = user;
+	public void setUser(User id) {
+		this.user = id;
+	}*/
+	
+	@Column(name = "user_id")
+	private int userId;
+	
+	public int getUserId() {
+		return userId;
+	}
+	public void setUserId(int userId) {
+		this.userId = userId;
 	}
 
 	@Column(name= "address_line_one")

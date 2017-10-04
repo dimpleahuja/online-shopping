@@ -27,7 +27,6 @@ public class Cart implements Serializable {
 	
 	/**************/
 	@OneToOne
-	
 	private User user;
 	
 	public User getUser() {

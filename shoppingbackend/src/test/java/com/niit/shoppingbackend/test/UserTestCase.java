@@ -28,11 +28,10 @@ public class UserTestCase {
 		
 		userDAO = (UserDAO) context.getBean("userDAO");
 	}
+	
 	/*
 	@Test 
 	public void testAdd() {
-		
-		
 		user = new User() ;
 		user.setFirstName("Hrithik");
 		user.setLastName("Roshan");
@@ -67,7 +66,6 @@ public class UserTestCase {
 					
 					//create a cart for this user
 					cart = new Cart();
-					
 					cart.setUser(user);
 					
 					// add the cart
@@ -95,12 +93,11 @@ public class UserTestCase {
 					
 					
 				}
-	}*/
+	}
+	*/
 	
-	/*
-	@Test 
+	/*@Test 
 	public void testAdd() {
-		
 		user = new User() ;
 		user.setFirstName("Hrithik");
 		user.setLastName("Roshan");
@@ -109,26 +106,28 @@ public class UserTestCase {
 		user.setRole("USER");
 		user.setEnabled(true);
 		user.setPassword("123456");
-					
+		
+			
 				if(user.getRole().equals("USER")) {
 					
 					//create a cart for this user
 					cart = new Cart();
-					
-					cart.setUser(user);	
-		
+					cart.setUser(user);
+				
 					// attach cart with the user
 					user.setCart(cart);
+					
+					
+			
 				}
-
-				
+	
 				// add the user
-				assertEquals("Failed to add user!",true, userDAO.addUser(user)); 
+				assertEquals("Failed to add User!",true,userDAO.addUser(user));
+				
+				
 	}
 	*/
-	
-	/*
-	@Test
+	/*@Test
 	public void testUpdateCart(){
 		
 		//fetch the user by email
@@ -143,8 +142,7 @@ public class UserTestCase {
 		
 		assertEquals("Failed to update the cart!", true, userDAO.updateCart(cart));
 		
-	}
-	*/
+	}*/
 	
 	/*
 	@Test
@@ -199,10 +197,9 @@ public class UserTestCase {
 		
 		assertEquals("Failed to add shipping address!", true, userDAO.addAddress(address));
 		
-		
+	
 	}
 	*/
-	
 	/*
 	@Test
 	public void testAddress(){
@@ -229,9 +226,7 @@ public class UserTestCase {
 		
 		
 		
-	}
-	*/
-	
+	}*/
 	@Test
 	public void testGetAddresses(){
 		
@@ -239,63 +234,13 @@ public class UserTestCase {
 		
 		//here instead of addresses as per 6.4 module i have done address as it was showing error..
 		assertEquals("Failed to fetch the list of address and size doed not match!",2,
-				userDAO.listShippingAddress(user).size());
+				userDAO.listShippingAddresses(user).size());
 		
 		assertEquals("Failed to fetch the billing address and size does not match!","Mumbai",
 				userDAO.getBillingAddress(user).getCity());
 		
-		
-		
+
 	}
 	
 	
-	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -55,7 +55,8 @@ public class UserDAOImpl implements UserDAO {
 			return false;
 		}
 	}
-
+	
+/*	
 	@Override
 	public User getByEmail(String email) {
 		String selectQuery = "FROM User WHERE email = :email";
@@ -75,6 +76,26 @@ public class UserDAOImpl implements UserDAO {
 	
 	
 	
+	}
+*/
+	
+	@Override
+	public User getByEmail(String email) {
+		String selectQuery = "FROM User WHERE email = :email";		
+		try {
+			
+			return sessionFactory.getCurrentSession()
+						.createQuery(selectQuery,User.class)
+							.setParameter("email", email)
+								.getSingleResult();
+			
+		}
+		catch(Exception ex) {
+			//ex.printStackTrace();
+			return null;
+		}
+		
+		
 	}
 
 	@Override
@@ -97,9 +118,9 @@ public class UserDAOImpl implements UserDAO {
 		
 	}
 
-	
+
 	@Override
-	public List<Address> listShippingAddress(User user) {
+	public List<Address> listShippingAddresses(User user) {
 String selectQuery = "FROM Address WHERE user = :user AND shipping = :shipping";
 		
 		try{
@@ -115,7 +136,7 @@ String selectQuery = "FROM Address WHERE user = :user AND shipping = :shipping";
 			ex.printStackTrace();
 			return null;
 		}
-			
+		
+		
 	}
-	
 }
