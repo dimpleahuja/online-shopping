@@ -1,5 +1,4 @@
-<div class="container">
-
+<div class="container" style="padding-top: 30px">
 <c:if test="${not empty message}">
 		
 		<div class="alert alert-info">
@@ -12,10 +11,7 @@
 
 		<c:when test="${not empty cartLines}">
 			<table id="cart" class="table table-hover table-condensed">
-				<br>
-				<br>
-				<br>
-				<br>
+				
 				<thead>
 					<tr>
 						<th style="width: 50%">Product</th>
@@ -55,9 +51,9 @@
 							<button type="button" name="refreshCart" value="${cartLine.id}" class="btn btn-info btn-sm">
 								<span class="glyphicon glyphicon-refresh"></span>
 							</button>
-							<button class="btn btn-danger btn-sm">
+							<a href="${contextRoot}/cart/${cartLine.id}/delete" class="btn btn-danger btn-sm">
 								<span class="glyphicon glyphicon-trash"></span>
-							</button>
+							</a>
 						</td>
 					</tr> 
 				
