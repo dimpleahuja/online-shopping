@@ -20,6 +20,12 @@ body{
 	background-size:cover;
 }
 
+#gallery {
+  text-align: center;
+  width: 610px;
+  margin: 70px auto;
+}
+
 .site-footer{
 	background-color:#222;
 	color:#fff;
@@ -187,3 +193,4 @@ input:checked+.slider:before {
 .unavailable{
 	color: red;
 }
+

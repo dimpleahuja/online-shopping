@@ -9,12 +9,7 @@
 <link href="customstyle.css" rel="stylesheet"/>
 <style>
 
-body{
-	background-image:url("resources/images/back5.jpg");
-	background-repeat:no-repeat;
-	background-size:cover;
-	
-}
+
 
 .inner_text_index{
 padding:50px;

@@ -9,7 +9,7 @@
 					class="icon-bar"></span> <span class="icon-bar"></span> <span
 					class="icon-bar"></span>
 			</button>
-			<%-- <a class="navbar-brand zero_padding" href="${contextRoot}/home"><img src="resources/handimg/logo.jpg" style="height:30px; width: 80px; padding: 0px 0px 0px 0px;"></a> --%>
+<!--  		<a class="navbar-brand zero_padding" href="${contextRoot}/home"><img src="resources/handimg/logo.jpg" style="height:30px; width: 80px; padding: 0px 0px 0px 0px;"></a>--> 
 		</div>
 		<div class="navbar-collapse collapse" id="mainNavbar">
 			<ul class="nav navbar-nav">
@@ -51,7 +51,8 @@
 
                 </security:authorize>
                 <security:authorize access="isAuthenticated()">
-				<li class="dropdown" id="userCart"><a href="javascript:void(0)"
+				<li class="dropdown" id="userCart">
+				<a href="javascript:void(0)"
 					class="btn btn-default dropdown-toggle" id="dropdownMenu1"
 					data-toggle="dropdown"> 
 					${userModel.fullName}
@@ -64,7 +65,7 @@
 						<li><a href="${contextRoot}/cart/show"> <span
 								class="glyphicon glyphicon-shopping-cart"></span> <span
 								class="badge">${userModel.cart.cartLines}</span> 
-								- &#8377; ${userModel.cart.grandTotal}
+								 &#8377; ${userModel.cart.grandTotal}
 								
 						</a></li>
 						<li class="divider" role="seperator"></li>

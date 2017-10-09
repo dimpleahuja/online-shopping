@@ -1,8 +1,4 @@
-
-
-
-<!-- start of form -->
-<div class="container">
+<div class="container" style="padding-top: 20px">
 <div class="row">
 <div class="col-lg-12">
 <hr>
@@ -32,23 +28,16 @@
 <button type="submit" class="btn btn-primary">Submit</button>
 </div>
 </div>
-
 </form>
 </div>
 </div>
 <!-- end of form -->
-
-
 <div class="row">
 <div class="col-lg-12">
 <hr>
-<h2 class="intro-text text-center">Contact
-<strong>HANDICRAFT.COM</strong>
-</h2>
 </hr>
 </div>
-
-<div class="col-md-4">
+<div class="col-md-3">
 <p>Phone:
 <strong>123,456,7689</strong>
 </p>
@@ -61,10 +50,13 @@
 <br>Lajpat Nagar,New Delhi</strong>
 </p>
 </div>
-</div>
+<div class="col-md-2">
 </div>
 <!-- map start -->
-<div class="col-md-8">
+<div class="col-md-7">
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448182.50738077075!2d77.0932634!3d28.646965499999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew+Delhi%2C+Delhi!5e0!3m2!1sen!2sin!4v1504190342364" 
-width="70%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+width="100%" height="50%" frameborder="0" style="border:0; padding-bottom: 0px" allowfullscreen></iframe>
+</div>
+</div>
+</div>
 <!-- end of form -->

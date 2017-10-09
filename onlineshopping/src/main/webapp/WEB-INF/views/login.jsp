@@ -40,7 +40,7 @@
 		<div class="container">
 		<!-- brand and toggle get grouped for better display -->
 		<div class="navbar-header">
-		<a class="navbar-brand" href="${contextRoot}/home">Online Shopping</a>
+		<a class="navbar-brand" href="${contextRoot}/home"><span class="glyphicon glyphicon-home"> Home</span></a>
 		</div>
 		</div>
 		</nav>
@@ -84,7 +84,7 @@
 			<div class="panel-body">
 			<form action="${contextRoot}/login" method="POST" class="form-horizontal" id="loginForm">
 			<div class="form-group">
-			<label for="username" class="col-md-4 control-label">Email: </label>
+			<label for="username" class="col-md-4 control-label"> Email: </label>
 			<div class="col-md-8">
 			<input type="text" name="username" id="username" class="form-control" />
 			</div>

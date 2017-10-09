@@ -1,10 +1,10 @@
 <!-- start of carousel-->
 
-<div class="bg" style="background-image: url('resources/images/back5.jpg')">
+<!--<div class="bg" style="background-image: url('resources/images/back5.jpg')">-->
 <div class="container">
 <div class="row">
 <div class="col-xs-12" style="padding-top:60px;">
-<div id="imageCarousel" class="carousel slide" data-wrap="false" data-pause="false" data-ride="carousel" data-interval="4000">
+<div id="imageCarousel" class="carousel slide" data-wrap="false" data-pause="false" data-ride="carousel" data-interval="6000">
 <ol class="carousel-indicator">
 </ol>
 <div class="carousel-inner">				
