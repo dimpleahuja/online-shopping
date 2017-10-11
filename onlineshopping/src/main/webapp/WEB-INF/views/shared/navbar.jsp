@@ -9,7 +9,7 @@
 					class="icon-bar"></span> <span class="icon-bar"></span> <span
 					class="icon-bar"></span>
 			</button>
-<!--  		<a class="navbar-brand zero_padding" href="${contextRoot}/home"><img src="resources/handimg/logo.jpg" style="height:30px; width: 80px; padding: 0px 0px 0px 0px;"></a>--> 
+  		<!--<a class="navbar-brand zero_padding" href="${contextRoot}/home"><img src="resources/handimg/logo.jpg" style="height:30px; width: 80px; padding: 0px 0px 0px 0px;"></a>--> 
 		</div>
 		<div class="navbar-collapse collapse" id="mainNavbar">
 			<ul class="nav navbar-nav">

@@ -1,3 +1,4 @@
+
 <!-- start of carousel-->
 
 <!--<div class="bg" style="background-image: url('resources/images/back5.jpg')">-->
@@ -54,7 +55,7 @@
 </div>
 </div>
 <div class="col-xs-4">
-<img src="resources/handimg/images.jpg"class="img-responsive" style="width:400% ; height:300px;">
+<img src="resources/images/51afoRagz1L.jpg"class="img-responsive" style="width:400% ; height:300px;">
 <div class="carousel-caption">
 </div>
 </div>
@@ -74,36 +75,51 @@
 </div>
 </div>
 								<!--end of carousal-->
-<!--start of image gallery-->
-<div class="container">
-<h3>NEW ARIVAL</h3>
+
+<!-- MAGNIFIGING GLASS FOR IMAGES -->
+<div class="container" style=padding-top:50px>
 <div class="row">
-<div class="col-md-3">
+<div class="col-lg-3">
 <div class="thumbnail">
-<img src="resources/handimg/20170830_214810.jpg" alt="ist img" >
-<p>this is candle</p>
-<p>price:120</p>
+<img src="resources/handimg/pottery1.jpg" alt="">
+<div class="caption">
+<h3>TRADITIONAL STATUES</h3>
+<p>Traditional Indian Handicraft from one of the oldest civilization of India</p>
+<!--<a href="" class="btn btn-default">Read</a>-->
+<a href="${contextRoot}/show/all/products" class="btn btn-primary">Click Here!</a>
 </div>
 </div>
-<div class="col-md-3">
+</div>
+<div class="col-lg-3">
 <div class="thumbnail">
-<img src="resources/handimg/images(11).jpg" alt="2st img">
-<p>this is candle</p>
-<p>price:140</p>
+<img src="resources/handimg/pottery2.jpg" alt="">
+<div class="caption">
+<h3>TURKISH FLOWER VASE</h3>
+<p>Lovely floral design on the outer part gives a spectacular look to the vase.</p>
+<!--  <a href="" class="btn btn-default">Read</a>-->
+<a href="${contextRoot}/show/all/products" class="btn btn-primary">Click here!</a>
 </div>
 </div>
-<div class="col-md-3">
+</div>
+<div class="col-lg-3">
 <div class="thumbnail">
-<img src="resources/handimg/images(14).jpg" alt="3st img">
-<p>this is wall hanging</p>
-<p>price:400</p>
+<img src="resources/handimg/pottery3.jpg" alt="">
+<div class="caption">
+<h3>RAJASTHANI DOLLS</h3>
+<p>Handicraft Bazaar Rajasthani famous Handmade Puppets.</p>
+<!-- <a href="" class="btn btn-default">Read</a>-->
+<a href="${contextRoot}/show/all/products" class="btn btn-primary">Click Here!</a>
 </div>
 </div>
-<div class="col-md-3">
+</div>
+<div class="col-lg-3">
 <div class="thumbnail">
-<img src="resources/handimg/images(9).jpg" alt="ist img">
-<p>this is woodencandle</p>
-<p>price:1200</p>
+<img src="resources/handimg/pottery4.jpg" alt="">
+<div class="caption">
+<h3>MALAYSIAN HAND-CRAFT</h3>
+<p>Basket small wired Rattan, espresso finish keep room tidy </p>
+<!-- <a href="" class="btn btn-default">Read</a>-->
+<a href="${contextRoot}/show/all/products" class="btn btn-primary">Click Here!</a>
 </div>
 </div>
 </div>

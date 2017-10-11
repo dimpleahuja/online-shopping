@@ -1,3 +1,9 @@
+<style>
+body 
+{
+background:url('resources/handimg/.jpg');
+}
+</style>
 <div class="container" style="padding-top: 20px">
 <div class="row">
 <div class="col-lg-12">

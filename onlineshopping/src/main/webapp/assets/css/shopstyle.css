@@ -194,3 +194,52 @@ input:checked+.slider:before {
 	color: red;
 }
 
+/*********/
+front page card
+.card
+{
+padding:50px;
+height: 300px;
+color: black;
+border: 2px solid white;
+border-radius: 9px;
+}
+.col-md-3 {
+  color: black;
+}
+
+@media (max-width: 750px) {
+  .column {
+    width: 100%;
+	display: block;
+  }
+}
+
+.container2 {
+  padding: 0 7px;
+}
+
+.container2::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 5px;
+  display: inline-block;
+  padding: 12px;
+  color: black;
+  background-color: white;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.button:hover {
+  background-color: #555;
+}
