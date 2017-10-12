@@ -61,7 +61,7 @@ public class User implements Serializable{
 		this.confirmPassword = confirmPassword;
 	}
 
-	@OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
+	@OneToOne(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	private Cart cart;
 	
 	public Cart getCart() {

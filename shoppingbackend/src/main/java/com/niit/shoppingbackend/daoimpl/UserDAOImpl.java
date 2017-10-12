@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.niit.shoppingbackend.dao.UserDAO;
 import com.niit.shoppingbackend.dto.Address;
-import com.niit.shoppingbackend.dto.Cart;
+//import com.niit.shoppingbackend.dto.Cart;
 import com.niit.shoppingbackend.dto.User;
 
 @Repository("userDAO")
@@ -44,6 +44,7 @@ public class UserDAOImpl implements UserDAO {
 		}
 	}
 
+	
 	
 /*	
 	@Override
@@ -88,27 +89,37 @@ public class UserDAOImpl implements UserDAO {
 	}
 
 	@Override
-	public Address getBillingAddress(User user) {
-		String selectQuery = "FROM Address WHERE user = :user AND billing = :billing";
+	public Address getBillingAddress(int userId) {
+		String selectQuery = "FROM Address WHERE userId = :userId AND billing = :isbilling";
 		
 		try{
 			
 			return sessionFactory.getCurrentSession()
 					.createQuery(selectQuery, Address.class)
-						.setParameter("user", user)
-							.setParameter("billing", true)
+						.setParameter("userId", userId)
+							.setParameter("isBilling", true)
 								.getSingleResult();
 			
 		}
 		catch(Exception ex){
-			ex.printStackTrace();
+			//ex.printStackTrace();
 			return null;
 		}
 		
 	}
-
-
 	@Override
+	public List<Address> listShippingAddresses(int userId) {
+		String selectQuery = "FROM Address WHERE userId = :userId AND shipping = :isShipping ORDER BY id DESC";
+		return sessionFactory
+				.getCurrentSession()
+					.createQuery(selectQuery,Address.class)
+						.setParameter("userId", userId)
+						.setParameter("isShipping", true)
+							.getResultList();
+		
+	}
+
+	/*@Override
 	public List<Address> listShippingAddresses(User user) {
 String selectQuery = "FROM Address WHERE user = :user AND shipping = :shipping";
 		
@@ -127,5 +138,38 @@ String selectQuery = "FROM Address WHERE user = :user AND shipping = :shipping";
 		}
 		
 		
+	}*/
+
+	@Override
+	public User get(int id) {
+		try {			
+			return sessionFactory.getCurrentSession().get(User.class, id);			
+		}
+		catch(Exception ex) {
+			System.out.println(ex.getMessage());
+			return null;
+		}
 	}
+
+	@Override
+	public Address getAddress(int addressId) {
+		try {			
+			return sessionFactory.getCurrentSession().get(Address.class, addressId);			
+		}
+		catch(Exception ex) {
+			System.out.println(ex.getMessage());
+			return null;
+		}
+	}
+	
+	@Override
+	public boolean updateAddress(Address address) {
+		try {			
+			sessionFactory.getCurrentSession().update(address);			
+			return true;
+		}
+		catch(Exception ex) {
+			return false;
+		}
+	}	
 }
