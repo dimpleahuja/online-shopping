@@ -45,7 +45,7 @@ background:url('resources/handimg/.jpg');
 </div>
 <div class="col-md-3">
 <p>Phone:
-<strong>123,456,7689</strong>
+<strong>2426037</strong>
 </p>
 <p>Email:
 <strong><a href="handicraftindia.com@gmail.com">handicraftindia@gmail.com</a></strong>

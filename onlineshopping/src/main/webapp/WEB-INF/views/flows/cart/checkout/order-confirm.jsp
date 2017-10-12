@@ -19,7 +19,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>White Pearl- Membership</title>
+<title>Online Handicraft- Membership</title>
 
 <script>
 
@@ -158,4 +158,4 @@
 </div>
 </div>
 </div>
-<%@include file="../../shared/flows-footer.jsp" %>
+<!--%@include file="../../shared/flows-footer.jsp" %-->
