@@ -70,6 +70,7 @@
 <a href="#imageCarousel" class="carousel-control left" data-slide="prev">
 <span class="glyphicon glyphicon-chevron-left"></span>
 </a>
+
 </div>
 </div>
 </div>
