@@ -31,17 +31,17 @@
 <div class="item">
 <div class="row">
 <div class="col-xs-4">
-<img src="resources/handimg/images(5).jpg" class="img-responsive" style="width:400% ; height:300px;">
+<img src="resources/handimg/crousal1.jpg" class="img-responsive">
 <div class="carousel-caption">
 </div>
 </div>														
 <div class="col-xs-4">										
-<img src="resources/handimg/images(9).jpg"class="img-responsive"  style="width:400% ; height:300px;" >
+<img src="resources/handimg/crousal11.jpg" class="img-responsive" >
 <div class="carousel-caption">
 </div>
 </div>												
 <div class="col-xs-4">
-<img src="resources/handimg/images(4).jpg" class="img-responsive" style="width:400% ; height:300px;" >
+<img src="resources/handimg/crousal111.jpg" class="img-responsive" >
 <div class="carousel-caption">
 </div>
 </div>
@@ -50,17 +50,17 @@
 <div class="item">
 <div class="row">
 <div class="col-xs-4">
-<img src="resources/handimg/images(7)%20(1).jpg" class="img-responsive"style="width:400% ; height:300px;">
+<img src="resources/handimg/crousal2.jpg" class="img-responsive">
 <div class="carousel-caption">
 </div>
 </div>
 <div class="col-xs-4">
-<img src="resources/images/51afoRagz1L.jpg"class="img-responsive" style="width:400% ; height:300px;">
+<img src="resources/handimg/crousal22.jpg" class="img-responsive">
 <div class="carousel-caption">
 </div>
 </div>
 <div class="col-xs-4">								
-<img src="resources/handimg/images(11).jpg" class="img-responsive">
+<img src="resources/handimg/crousal222.jpg" class="img-responsive">
 <div class="carousel-caption">
 </div>
 </div>
